@@ -28,8 +28,8 @@ class Users extends Component {
   render() {
     return (
       <div>
-        {this.state.users.map((item) => {
-          return <UserItem />;
+        {this.state.users.map((user) => {
+          return <UserItem key={user.login} user={user} />;
         })}
       </div>
     );
