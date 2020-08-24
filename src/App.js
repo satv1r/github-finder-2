@@ -1,14 +1,19 @@
 import React, { Component } from "react";
+import axios from "axios";
 import Navbar from "./components/layout/Navbar";
 import Users from "./components/users/Users";
 import "./App.css";
 
 class App extends Component {
+  componentDidMount() {}
+
   render() {
     return (
       <div className="App">
         <Navbar />
-        <Users />
+        <div className="container">
+          <Users />
+        </div>
       </div>
     );
   }
